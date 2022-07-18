@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+  }
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    background-color: red;
+    margin: 10px auto; 
+    /* The first value is for margin-top & margin-bottom and the second for margin-left and margin-right; */
+    
+  }
+  
