@@ -1,0 +1,52 @@
+Now you can style the content of the .heading element with CSS Grid.
+
+The CSS repeat() function is used to repeat a value, rather than writing it out manually, and is helpful for grid layouts. For example, setting the grid-template-columns property to repeat(20, 200px) would create 20 columns each 200px wide.
+
+Give your .heading element a grid-template-columns property set to repeat(2, 1fr) to create two columns of equal width.
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baskervville', serif;
+  color: linen;
+  background-color: rgb(20, 30, 40);
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: linen;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+  row-gap: 3rem;
+}
+
+.heading {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text {
+  grid-column: 2 / 3;
+}
