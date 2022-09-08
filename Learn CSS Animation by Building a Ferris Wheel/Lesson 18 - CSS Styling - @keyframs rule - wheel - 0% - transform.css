@@ -73,6 +73,6 @@
 
 @keyframes wheel {
    0% {
-     transform: rototate(0deg);
+     transform: rotate(0deg);
    }
 }
